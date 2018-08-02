@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: eurekaclient
+  cloud:
+    inetutils: ignored-interfaces[0]=eth0
+
+
+ #   spring.cloud.inetutils.ignored-interfaces[0]=eth0
 #  rabbitmq:
 #    host: localhost
 #    port: 5672
